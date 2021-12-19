@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Shape(ABC):
@@ -7,6 +7,7 @@ class Shape(ABC):
         self.y = y
         self.color = color
 
+    @abstractmethod
     def draw(self, canvas):
         pass
 
